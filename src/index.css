@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.tab-list .nav-tabs{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+.tab-list .nav-tabs .nav-link{
+  white-space: nowrap;
+  margin-right: 5px;
+  margin-left: 10px;
+  border: 0;
+  padding: 15px;
+  color: #9F9F9F;
+}
+.tab-list .nav-tabs .nav-link.active{
+  color: #000000;
+  font-weight: 700;
+  border-bottom: 5px solid black;
+}
+.important-tab{
+  color:#FF697A;
+  border-bottom: 1px solid#FF697A;
+}
+.important-tab-active{
+  font-weight: 700;
+}
+.container-line-today{
+  margin: 0 auto;
+}
+.card-container{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3rem;
+}
+.card-groups{
+  height: inherit;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 2.5rem;
+}
+.img-article{
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title .h5{
+  font-size: 5rem;
+}
