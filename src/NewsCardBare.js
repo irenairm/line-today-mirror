@@ -12,9 +12,9 @@ class NewsCardBare extends React.Component{
     }
     
     render(){
-        const limit = this.props.limit?this.props.limit:null
+        const limit = this.props.limit?this.props.limit:999;
         return <Row>
-        {this.props.sections.map((articles,index1) => limit!==null?(articles.articles.splice(0,limit)):(articles.articles.splice(0)).map((articles,index) => 
+        {this.props.sections.map((articles,index1) => articles.articles.map((articles,index) => 
         articles.title?
         <Col sm={6}>
            <Card key={index} className="card-groups bare" onClick={()=>this.goToPage(articles.url.url)}>
@@ -24,7 +24,7 @@ class NewsCardBare extends React.Component{
                     </Col>
                     <Col sm={8}>
                         <Card.Body>
-                            {index + index1}
+                            {index}
                             <Card.Title className="title-article">{articles.title}</Card.Title>
                             <Card.Text className="publisher-article">{articles.publisher}</Card.Text>
                         </Card.Body>
@@ -34,7 +34,7 @@ class NewsCardBare extends React.Component{
                 <small className="text-muted">{this.formatTimestamp(articles.publishTimeUnix)}</small>
                 </Card.Footer>
             </Card>
-        </Col>:null))}
+        </Col>:null).splice(0,limit))}
        
       </Row>
       

@@ -11,6 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar-overwrite{
+  padding:0;
+  background-color: #000000;
+}
+.navbar-brand-overwrite{
+  padding:0;
+  padding-left:1rem
+}
 .tab-list .nav-tabs{
   overflow-x: scroll;
   overflow-y: hidden;
@@ -45,7 +53,7 @@ code {
   margin-top: 3rem;
 }
 .card-groups{
-  /* height: 300px; */
+  max-height: 300px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 2.5rem;
@@ -60,7 +68,7 @@ code {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-position: 50%;
+    background-position: 100%;
     position: relative;
 }
 .title-article{
@@ -79,4 +87,9 @@ code {
 }
 .row .col-sm-4{
   padding-right:0
+}
+.button-container{
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
 }
