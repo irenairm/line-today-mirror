@@ -29,7 +29,6 @@ class App extends React.Component{
     this.setState({showAll:!this.state.showAll})
   }
   render(){
-    console.log(this.state.data)
     const limit = this.state.showAll?999:4
     return <Container>
     <Navbar bg="dark" variant="dark" className="navbar-overwrite">
