@@ -45,10 +45,13 @@ code {
   margin-top: 3rem;
 }
 .card-groups{
-  height: inherit;
+  /* height: 300px; */
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 2.5rem;
+}
+.card-footer{
+  height: 100%;
 }
 .card-groups:hover{
   cursor:pointer;
@@ -66,10 +69,14 @@ code {
 .publisher-article{
   color: #9F9F9F;
 }
-.card-title .h5{
-  font-size: 5rem;
+.card-body .card-title{
+  font-weight: 700;
+  font-size: 1rem;
 }
-
+#card-title-section{
+  font-weight: 700;
+  font-size: 2rem;
+}
 .row .col-sm-4{
   padding-right:0
 }
